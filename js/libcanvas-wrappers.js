@@ -1,6 +1,8 @@
 (function () {
 	"use strict";
 
+	require('require-kiss');
+
 	var functions = require('./libcanvas-functions');
 
 	module.exports.ellipse = function (g, x, y, xDis, yDis) {
