@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<script src="./require-kiss.js"></script>
+<script src="js/libcanvas-functions.js"></script>
+
+<script type='text/javascript'>
+(function () {
+	"use strict";
+
+	var functions = require('libcanvas-functions');
+
+	window.onload = function () {
+		var canvas = document.getElementById('canvas'),
+			context = canvas.getContext('2d');
+
+		context.strokeStyle = "#005500";
+		context.fillStyle = "#00ff00";
+		context.beginPath();
+		functions.ellipse.call(context, 250, 250, 150, 150);
+		context.closePath();
+		context.stroke();
+		context.fill();
+	};
+}());
+</script>
+</head>
+
+<body>
+
+<canvas id='canvas' width='500' height='500' style='border: 1px solid' />
+
+</body>
+
+</html>

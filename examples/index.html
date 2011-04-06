@@ -1,0 +1,61 @@
+<html>
+
+<head>
+
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="./require-kiss.js"></script>
+<script src="js/libcanvas-functions.js"></script>
+<script src="js/libcanvas-wrappers.js"></script>
+<script src="js/libcanvas.js"></script>
+
+<script>
+(function () {
+	"use strict";
+
+	var fns = require('./libcanvas-functions'),
+		wrappers = require('./libcanvas-wrappers');
+
+	$(document).ready(function () {
+		var canvas, g;
+
+		canvas = document.getElementById('canvy');
+		g = canvas.getContext('2d');
+
+		g.strokeStyle = "#550000";
+		g.fillStyle = "#ff0000";
+		g.beginPath();
+		g.ellipse(250, 250, 250, 250);
+		g.closePath();
+		g.stroke();
+		g.fill();
+
+		g.strokeStyle = "#005500";
+		g.fillStyle = "#00ff00";
+		g.beginPath();
+		fns.ellipse.call(g, 250, 250, 150, 150);
+		g.closePath();
+		g.stroke();
+		g.fill();
+
+		g.strokeStyle = "#000055";
+		g.fillStyle = "#0000ff";
+		g.beginPath();
+		wrappers.ellipse(g, 250, 250, 50, 50);
+		g.closePath();
+		g.stroke();
+		g.fill();
+
+	});
+}());
+
+</script>
+
+</head>
+
+<body>
+
+<canvas id="canvy" width=500 height=500 style="border: 1 solid" />
+
+</body>
+
+</html>
