@@ -9,6 +9,25 @@ To install this module:
 
 Note: You will still need to copy the source files if you plan to use this in the browser.
 
+Functions
+---------
+
+These functions are added in supplement to the default methods in the HTML5 canvas drawing specification.  These are only convenience methods to simplify common tasks.
+
+**`ellipse(x, y, xDis, yDis)`**
+
+Draw an ellipse (uses bézier curves)
+
+* parameters
+  * `x`- center of ellipse with respect to the x-axis
+  * `y`- center of ellipse with respect to the y-axis
+  * `xDis`- distance to outside of ellipse from center on the x-axis
+  * `yDis`- distance to outside of ellipse from center on the y-axis
+* notes
+  * does not call `beginPath`, `closePath`, `stroke` or `fill`
+  * ellipses will not be perfect because we use an estimate *kappa*
+  * *kappa* = `(4 * sqrt(2) - 1) / 3`
+
 Dependencies
 ------------
 
