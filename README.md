@@ -25,7 +25,7 @@ Examples
 
 There are four examples provided, with a simple node.js webserver.
 
-* index.html- All three ways to use the library in one file
+* all.html- All three ways to use the library in one file
 * low-level.html- Use of the low-level functions
 * protoOverride.html- Overrides the drawing object prototype (**preferred**)
 * wrappers.html- Using the wrapped functions

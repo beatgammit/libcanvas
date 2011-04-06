@@ -1,61 +1,28 @@
-<html>
 
-<head>
+<html> 
 
-<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-<script src="./require-kiss.js"></script>
-<script src="js/libcanvas-functions.js"></script>
-<script src="js/libcanvas-wrappers.js"></script>
-<script src="js/libcanvas.js"></script>
+<head> 
+<title>Libcanvas Live Examples</title> 
+</head> 
 
-<script>
-(function () {
-	"use strict";
+<body> 
 
-	var fns = require('./libcanvas-functions'),
-		wrappers = require('./libcanvas-wrappers');
+HTML5 has all of the functions necessary to draw whatever you want in a canvas, but sometimes the API leaves a little to be desired.  This module attempts to add convenience methods to the HTML5 canvas API.
 
-	$(document).ready(function () {
-		var canvas, g;
+<br /> 
+<br /> 
 
-		canvas = document.getElementById('canvy');
-		g = canvas.getContext('2d');
+There are three ways to interface with this module.  Here are examples of each:
 
-		g.strokeStyle = "#550000";
-		g.fillStyle = "#ff0000";
-		g.beginPath();
-		g.ellipse(250, 250, 250, 250);
-		g.closePath();
-		g.stroke();
-		g.fill();
+<br /> 
 
-		g.strokeStyle = "#005500";
-		g.fillStyle = "#00ff00";
-		g.beginPath();
-		fns.ellipse.call(g, 250, 250, 150, 150);
-		g.closePath();
-		g.stroke();
-		g.fill();
-
-		g.strokeStyle = "#000055";
-		g.fillStyle = "#0000ff";
-		g.beginPath();
-		wrappers.ellipse(g, 250, 250, 50, 50);
-		g.closePath();
-		g.stroke();
-		g.fill();
-
-	});
-}());
-
-</script>
-
-</head>
-
-<body>
-
-<canvas id="canvy" width=500 height=500 style="border: 1 solid" />
-
-</body>
-
-</html>
+<ul> 
+<li><a href="all.html">All in one</a></li> 
+<li><a href="low-level.html">Accessing low-level functions</a></li> 
+<li><a href="protoOverride.html">Overriding the prototype</a></li> 
+<li><a href="wrappers.html">Using the wrapped functions</a></li> 
+</ul> 
+	    
+</body> 
+		 
+</html> 
