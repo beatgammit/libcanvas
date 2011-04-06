@@ -26,7 +26,7 @@ Draw an ellipse (uses bézier curves)
 * notes
   * does not call `beginPath`, `closePath`, `stroke` or `fill`
   * ellipses will not be perfect because we use an estimate *kappa*
-  * *kappa* = `(4 * sqrt(2) - 1) / 3`
+  * *kappa* = `4 * ((sqrt(2) - 1) / 3)`
 
 Dependencies
 ------------
