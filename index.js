@@ -9,4 +9,4 @@
 	};
 
 	provide('libcanvas', module.exports);
-}();
+}());

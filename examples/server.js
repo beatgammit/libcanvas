@@ -1,8 +1,12 @@
-var connect = require('connect'),
-	port = 5454;
+(function () {
+	"use strict";
 
-connect(
-	connect.static("./")
-).listen(port, function () {
-	console.log("Server running on port " + port);
-});
+	var connect = require('connect'),
+		port = 5454;
+
+	connect(
+		connect.static("./")
+	).listen(port, function () {
+		console.log("Server running on port " + port);
+	});
+}());

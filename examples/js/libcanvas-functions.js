@@ -1,8 +1,10 @@
 (function () {
+	"use strict";
+
 	require('require-kiss');
 
 	function ellipse(x, y, xDis, yDis) {
-		var kappa = .5522848;
+		var kappa = 0.5522848,
 			ox = xDis * kappa,  // control point offset horizontal
 			oy = yDis * kappa,  // control point offset vertical
 			xe = x + xDis,      // x-end
