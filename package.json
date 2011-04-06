@@ -1,0 +1,22 @@
+{
+  "name": "libcanvas",
+  "description": "Supplies missing functionality in the HTML5 canvas API",
+  "version": "0.1.0",
+  "homepage": "https://github.com/beatgammit/libcanvas",
+  "keywords": ["canvas", "html5", "browser", "ellipse", "draw"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/beatgammit/libcanvas.git"
+  },
+  "author": "T. Jameson Little <t.jameson.little@gmail.com>",
+  "main": "index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+	  "require-kiss": ">= 1.0.5"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

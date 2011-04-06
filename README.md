@@ -14,7 +14,7 @@ Functions
 
 These functions are added in supplement to the default methods in the HTML5 canvas drawing specification.  These are only convenience methods to simplify common tasks.
 
-**`ellipse(x, y, xDis, yDis)`**
+**ellipse(x, y, xDis, yDis)**
 
 Draw an ellipse (uses bézier curves)
 
